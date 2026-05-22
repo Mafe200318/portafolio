@@ -251,6 +251,7 @@ section{padding:100px 60px;}
 .project-card.noir-card{background:#0a0a0a;border:1px solid rgba(201,168,76,.3);}
 .project-card.noir-card:hover{box-shadow:0 20px 60px rgba(201,168,76,.18);border-color:rgba(201,168,76,.55);}
 .noir-card .project-img::after{display:none;}
+.project-img.no-overlay::after{display:none;}
 .noir-card .project-company{color:#c9a84c;}
 .noir-card .project-name{color:#f5f2ec;}
 .noir-card .project-desc{color:rgba(245,242,236,.55);}
@@ -544,7 +545,10 @@ footer{
       </div>
 
       <div class="project-card reveal">
-        <div class="project-img dark" style="font-size:2.6rem;">📊</div>
+        <div class="project-img dark no-overlay" style="background:linear-gradient(135deg,#071428,#0F2251);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;">
+          <span style="font-family:monospace;font-weight:900;font-size:2.2rem;letter-spacing:.15em;color:#FF6B35;filter:drop-shadow(0 0 18px rgba(255,107,53,.55));">INV</span>
+          <span style="font-size:.58rem;letter-spacing:.2em;color:rgba(255,255,255,.3);text-transform:uppercase;font-family:monospace;">Investigación de mercados</span>
+        </div>
         <div class="project-body">
           <div class="project-tags">
             <span class="project-tag">Angular</span>
@@ -584,7 +588,10 @@ footer{
       </div>
 
       <div class="project-card reveal">
-        <div class="project-img rose" style="font-size:2.6rem;">💎</div>
+        <div class="project-img rose no-overlay" style="background:linear-gradient(135deg,#1A0812,#33102B);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;">
+          <span style="font-family:Georgia,serif;font-size:1.9rem;letter-spacing:.3em;color:#E8B4C8;text-shadow:0 0 26px rgba(232,180,200,.55);">♦ ELEYA</span>
+          <span style="font-size:.58rem;letter-spacing:.22em;color:rgba(232,180,200,.35);text-transform:uppercase;font-family:monospace;">Joyería & bisutería</span>
+        </div>
         <div class="project-body">
           <div class="project-tags">
             <span class="project-tag">HTML/CSS</span>
@@ -608,7 +615,10 @@ footer{
       </div>
 
       <div class="project-card reveal">
-        <div class="project-img" style="background:linear-gradient(135deg,#e3f2fd,#90caf9);font-size:2.6rem;">🏪</div>
+        <div class="project-img no-overlay" style="background:linear-gradient(135deg,#062030,#0A3D58);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;">
+          <span style="font-family:monospace;font-weight:900;font-size:2.2rem;letter-spacing:.12em;color:#17D4C2;filter:drop-shadow(0 0 18px rgba(23,212,194,.6));">POS</span>
+          <span style="font-size:.58rem;letter-spacing:.2em;color:rgba(23,212,194,.35);text-transform:uppercase;font-family:monospace;">Punto de venta</span>
+        </div>
         <div class="project-body">
           <div class="project-tags">
             <span class="project-tag">JavaScript</span>
@@ -623,7 +633,10 @@ footer{
       </div>
 
       <div class="project-card reveal">
-        <div class="project-img soft" style="font-size:2.6rem;">💼</div>
+        <div class="project-img soft no-overlay" style="background:linear-gradient(135deg,#0D1F1A,#173529);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;">
+          <span style="font-family:monospace;font-weight:700;font-size:1.9rem;letter-spacing:.28em;color:#7CE8C2;filter:drop-shadow(0 0 16px rgba(124,232,194,.5));">SOFTY</span>
+          <span style="font-size:.58rem;letter-spacing:.22em;color:rgba(124,232,194,.35);text-transform:uppercase;font-family:monospace;">Gestión empresarial</span>
+        </div>
         <div class="project-body">
           <div class="project-tags">
             <span class="project-tag">JavaScript</span>

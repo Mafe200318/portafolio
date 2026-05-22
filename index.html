@@ -247,32 +247,10 @@ section{padding:100px 60px;}
 .project-link svg{width:14px;height:14px;transition:transform .2s;}
 .project-link:hover svg{transform:translate(3px,-3px);}
 
-/* ── NOIR card ── */
-.project-card.noir-card{
-  background:#0a0a0a;
-  border:1px solid rgba(201,168,76,.25);
-  color:#f5f2ec;
-}
-.project-card.noir-card:hover{
-  box-shadow:0 20px 60px rgba(201,168,76,.18);
-  transform:translateY(-6px);
-  border-color:rgba(201,168,76,.5);
-}
-.noir-card .project-img{
-  background:linear-gradient(135deg,#0a0a0a 0%,#1a1510 50%,#111 100%);
-  flex-direction:column;gap:10px;
-}
+/* ── NOIR card — sólo colores, misma estructura ── */
+.project-card.noir-card{background:#0a0a0a;border:1px solid rgba(201,168,76,.3);}
+.project-card.noir-card:hover{box-shadow:0 20px 60px rgba(201,168,76,.18);border-color:rgba(201,168,76,.55);}
 .noir-card .project-img::after{display:none;}
-.noir-logo-display{
-  font-family:monospace;font-size:2.2rem;font-weight:400;
-  letter-spacing:.4em;color:#c9a84c;
-  text-shadow:0 0 30px rgba(201,168,76,.5),0 0 60px rgba(201,168,76,.2);
-}
-.noir-logo-sub{
-  font-size:.58rem;letter-spacing:.2em;color:rgba(245,242,236,.35);
-  text-transform:uppercase;font-family:monospace;
-}
-.noir-card .project-body{background:transparent;}
 .noir-card .project-company{color:#c9a84c;}
 .noir-card .project-name{color:#f5f2ec;}
 .noir-card .project-desc{color:rgba(245,242,236,.55);}
@@ -542,9 +520,9 @@ footer{
 
       <!-- ✦ NOIR ✦ -->
       <div class="project-card noir-card reveal">
-        <div class="project-img dark">
-          <div class="noir-logo-display">✦ NOIR</div>
-          <div class="noir-logo-sub">Objetos de distinción</div>
+        <div class="project-img dark" style="background:#0a0a0a;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;">
+          <span style="font-family:monospace;font-size:2rem;letter-spacing:.4em;color:#c9a84c;text-shadow:0 0 30px rgba(201,168,76,.5);">✦ NOIR</span>
+          <span style="font-size:.58rem;letter-spacing:.22em;color:rgba(245,242,236,.35);text-transform:uppercase;font-family:monospace;">Objetos de distinción</span>
         </div>
         <div class="project-body">
           <div class="project-tags">

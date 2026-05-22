@@ -247,47 +247,13 @@ section{padding:100px 60px;}
 .project-link svg{width:14px;height:14px;transition:transform .2s;}
 .project-link:hover svg{transform:translate(3px,-3px);}
 
-/* ── NOIR card — sólo colores, misma estructura ── */
-.project-card.noir-card{background:linear-gradient(160deg,#181000,#221600);border:1px solid rgba(201,168,76,.3);}
-.project-card.noir-card:hover{box-shadow:0 20px 60px rgba(201,168,76,.18);border-color:rgba(201,168,76,.55);}
-.noir-card .project-img::after{display:none;}
+/* ── Imágenes de proyecto: sin overlay blanco sobre fondos oscuros ── */
 .project-img.no-overlay::after{display:none;}
-.noir-card .project-company{color:#c9a84c;}
-.noir-card .project-name{color:#f5f2ec;}
-.noir-card .project-desc{color:rgba(245,242,236,.55);}
-.noir-card .project-link{color:#c9a84c;}
-.noir-card .project-link:hover{color:#e8c96d;}
-
-/* ── Colored cards — base compartida ── */
-.dark-card .project-name{color:#f0ede8;}
-.dark-card .project-desc{color:rgba(235,230,225,.5);}
-.dark-card .project-tag{background:rgba(255,255,255,.08);color:rgba(215,210,205,.6);border-color:rgba(255,255,255,.12);}
-.dark-card .project-tag.dark-tag{background:rgba(255,255,255,.1);color:rgba(215,210,205,.65);}
-/* Invamer — naranja quemado */
-.invamer-card{background:linear-gradient(160deg,#2A1100,#3A1800);border-color:rgba(255,107,53,.35);}
-.invamer-card:hover{box-shadow:0 20px 60px rgba(255,107,53,.25);border-color:rgba(255,107,53,.6);}
-.invamer-card .project-company,.invamer-card .project-link{color:#FF6B35;}
-.invamer-card .project-link:hover{color:#ff9468;}
-/* ContaFlow — verde oscuro */
-.contaflow-card{background:linear-gradient(160deg,#00260C,#003515);border-color:rgba(0,217,126,.3);}
-.contaflow-card:hover{box-shadow:0 20px 60px rgba(0,217,126,.2);border-color:rgba(0,217,126,.55);}
-.contaflow-card .project-company,.contaflow-card .project-link{color:#00D97E;}
-.contaflow-card .project-link:hover{color:#3dffa5;}
-/* ELEYA — borgoña */
-.eleya-card{background:linear-gradient(160deg,#260012,#35001A);border-color:rgba(232,180,200,.3);}
-.eleya-card:hover{box-shadow:0 20px 60px rgba(232,180,200,.2);border-color:rgba(232,180,200,.58);}
-.eleya-card .project-company,.eleya-card .project-link{color:#E8B4C8;}
-.eleya-card .project-link:hover{color:#f5d0de;}
-/* MercadoPOS — teal profundo */
-.pos-card{background:linear-gradient(160deg,#002626,#003535);border-color:rgba(23,212,194,.3);}
-.pos-card:hover{box-shadow:0 20px 60px rgba(23,212,194,.2);border-color:rgba(23,212,194,.55);}
-.pos-card .project-company,.pos-card .project-link{color:#17D4C2;}
-.pos-card .project-link:hover{color:#44ece0;}
-/* Softy — esmeralda */
-.softy-card{background:linear-gradient(160deg,#002018,#002B22);border-color:rgba(124,232,194,.3);}
-.softy-card:hover{box-shadow:0 20px 60px rgba(124,232,194,.2);border-color:rgba(124,232,194,.55);}
-.softy-card .project-company,.softy-card .project-link{color:#7CE8C2;}
-.softy-card .project-link:hover{color:#a8f0d6;}
+/* NOIR: única excepción — borde e ícono de empresa en dorado ── */
+.noir-card{border-color:rgba(201,168,76,.25);}
+.noir-card:hover{border-color:rgba(201,168,76,.5);box-shadow:0 20px 60px rgba(201,168,76,.1);}
+.noir-card .project-company{color:#b8952e;}
+.noir-card .project-img::after{display:none;}
 
 /* ── CONTACTO ── */
 #contacto{background:var(--dark);color:#fff;}
@@ -576,7 +542,7 @@ footer{
         </div>
       </div>
 
-      <div class="project-card dark-card invamer-card reveal">
+      <div class="project-card reveal">
         <div class="project-img dark no-overlay" style="background:linear-gradient(135deg,#071428,#0F2251);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;">
           <svg width="46" height="34" viewBox="0 0 46 34" fill="none" stroke="#FF6B35" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="filter:drop-shadow(0 0 14px rgba(255,107,53,.65))"><line x1="2" y1="32" x2="44" y2="32"/><rect x="4" y="18" width="10" height="14" rx="1.5" fill="rgba(255,107,53,.15)"/><rect x="18" y="9" width="10" height="23" rx="1.5" fill="rgba(255,107,53,.15)"/><rect x="32" y="3" width="10" height="29" rx="1.5" fill="rgba(255,107,53,.15)"/></svg>
           <span style="font-family:monospace;font-weight:700;font-size:1rem;letter-spacing:.2em;color:#FF6B35;filter:drop-shadow(0 0 10px rgba(255,107,53,.45));">INVAMER</span>
@@ -597,7 +563,7 @@ footer{
         </div>
       </div>
 
-      <div class="project-card dark-card contaflow-card reveal">
+      <div class="project-card reveal">
         <div class="project-img dark no-overlay" style="background:linear-gradient(135deg,#080F1E,#0D1A30);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;">
           <svg width="44" height="44" viewBox="0 0 44 44" fill="none" stroke="#00D97E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="filter:drop-shadow(0 0 14px rgba(0,217,126,.65))"><path d="M38 22a16 16 0 0 0-28.5-10"/><path d="M6 22a16 16 0 0 0 28.5 10"/><polyline points="8,6 9.5,12 15.5,10.5"/><polyline points="36,38 34.5,32 28.5,33.5"/></svg>
           <span style="font-family:monospace;font-weight:700;font-size:.95rem;letter-spacing:.18em;color:#00D97E;filter:drop-shadow(0 0 10px rgba(0,217,126,.45));">CONTAFLOW</span>
@@ -622,7 +588,7 @@ footer{
         </div>
       </div>
 
-      <div class="project-card dark-card eleya-card reveal">
+      <div class="project-card reveal">
         <div class="project-img rose no-overlay" style="background:linear-gradient(135deg,#1A0812,#33102B);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;">
           <svg width="44" height="42" viewBox="0 0 44 42" fill="none" stroke="#E8B4C8" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="filter:drop-shadow(0 0 14px rgba(232,180,200,.65))"><path d="M22 2 L40 16 L22 40 L4 16 Z" fill="rgba(232,180,200,.07)"/><line x1="4" y1="16" x2="40" y2="16"/><line x1="22" y1="2" x2="14" y2="16"/><line x1="22" y1="2" x2="30" y2="16"/><line x1="14" y1="16" x2="22" y2="40"/><line x1="30" y1="16" x2="22" y2="40"/></svg>
           <span style="font-family:Georgia,serif;font-size:1.1rem;letter-spacing:.3em;color:#E8B4C8;text-shadow:0 0 18px rgba(232,180,200,.5);">ELEYA</span>
@@ -650,7 +616,7 @@ footer{
         </div>
       </div>
 
-      <div class="project-card dark-card pos-card reveal">
+      <div class="project-card reveal">
         <div class="project-img no-overlay" style="background:linear-gradient(135deg,#062030,#0A3D58);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;">
           <svg width="46" height="38" viewBox="0 0 46 38" fill="none" stroke="#17D4C2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="filter:drop-shadow(0 0 14px rgba(23,212,194,.65))"><path d="M2 4h7l5 18h20l5-12H12"/><circle cx="20" cy="34" r="2.5" fill="rgba(23,212,194,.2)" stroke="#17D4C2"/><circle cx="33" cy="34" r="2.5" fill="rgba(23,212,194,.2)" stroke="#17D4C2"/></svg>
           <span style="font-family:monospace;font-weight:700;font-size:.9rem;letter-spacing:.15em;color:#17D4C2;filter:drop-shadow(0 0 10px rgba(23,212,194,.45));">MERCADOPOS</span>
@@ -669,7 +635,7 @@ footer{
         </div>
       </div>
 
-      <div class="project-card dark-card softy-card reveal">
+      <div class="project-card reveal">
         <div class="project-img soft no-overlay" style="background:linear-gradient(135deg,#0D1F1A,#173529);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;">
           <svg width="44" height="40" viewBox="0 0 44 40" fill="none" stroke="#7CE8C2" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="filter:drop-shadow(0 0 12px rgba(124,232,194,.6))"><rect x="2" y="2" width="18" height="18" rx="2.5" fill="rgba(124,232,194,.08)"/><rect x="24" y="2" width="18" height="8" rx="2.5" fill="rgba(124,232,194,.08)"/><rect x="24" y="14" width="18" height="6" rx="2.5" fill="rgba(124,232,194,.08)"/><rect x="2" y="24" width="8" height="14" rx="2.5" fill="rgba(124,232,194,.08)"/><rect x="14" y="24" width="28" height="14" rx="2.5" fill="rgba(124,232,194,.08)"/></svg>
           <span style="font-family:monospace;font-weight:700;font-size:1rem;letter-spacing:.25em;color:#7CE8C2;filter:drop-shadow(0 0 10px rgba(124,232,194,.45));">SOFTY</span>
